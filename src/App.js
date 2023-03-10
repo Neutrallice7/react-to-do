@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
 
+
 function Todo({ todo, index, completeTodo, removeTodo }) {
   return (
     <div
       className="todo"
       style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
+      
     >
       {todo.text}
       <div>
@@ -63,6 +65,7 @@ function App() {
   return (
     <div className="app">
       <div className="todo-list">
+      <h1 className="text-center mb-4">Todo List by Sulthan 2502020075</h1>
         {todos.map((todo, index) => (
           <Todo
             key={index}
